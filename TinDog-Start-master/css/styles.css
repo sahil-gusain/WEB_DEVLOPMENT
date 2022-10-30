@@ -1,0 +1,140 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
+}
+#title{
+    background-color: #ff4c68;
+    color:#fff;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.5rem;
+}
+h2{
+    font-family: 'Montserrat-bold';
+    font-size:3rem ;
+}
+p{
+    color: gray;
+}
+.icons{
+    color:#ef8172;
+    margin-bottom: 1rem;
+}
+.icons:hover{
+    color: #ff4c68;
+}
+.container-fluid{
+    padding:  3% 15%;
+}
+
+
+/* NAVIGATION BAR */
+.navbar{
+    padding: 0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size:2.5rem;
+    font-weight:bold;
+    padding-left: 1rem;
+}
+.nav-item{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 2.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.nav-link{
+    color:#fff;
+}
+.download-button{
+    margin:5% 3% 5% 0;
+}
+.title-image{
+    height: 600px;
+    width: 300px;
+    transform: rotate(25deg);
+    position: absolute;
+    z-index: 0;
+}
+
+#features{
+    padding: 5% 12%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+
+
+/* Testimonials Section */
+
+#testimonials{
+    background-color: #ef8172;
+    color: white;
+    font-family: 'Montserrat-bold';
+    font-size: 1.2rem;
+    line-height: 2%;
+}
+.test-image{
+    border-radius: 50%;
+    width: 15%;
+    margin-left: 1rem;
+}
+#press{
+    background-color: #ef8172;
+    padding: 7%;
+}
+.press-icons{
+    width: 20%;
+    padding-left:1.5rem ;
+}
+.carousel-item{
+    padding:  7% 15%;
+    height:500px;
+}
+/* pricing Section */
+
+#pricing{
+    padding: 100px;
+}
+.pricing-ele{
+    padding: 3% 5%;
+}
+/* media Query code */
+
+@media (max-width:1024px) {
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+    
+}
+/* call of action */
+#cta{
+    background-color: #ff4c68;
+    color:#fff;
+    padding: 7% 15%;
+}
+h3{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem
+
+}
+.download-button1{
+    margin:2% 1% 2% 0;
+}
+
+/* footer  */
+
+#footer{
+    margin: 4px;
+    padding: 4px;
+    padding: 7% 15%;
+}
