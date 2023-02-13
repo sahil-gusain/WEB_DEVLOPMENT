@@ -1,4 +1,3 @@
-//Random no generater
 
 var n = MAth.random();
 /*
@@ -15,3 +14,10 @@ n = n*100;
 n= Math.floor(n+1);
 
 console.log(n);
+
+if(n===100){
+    console.log("lovescore : " + n+"% you love yourself like kanye loves kanye ");
+}else{
+    console.log("lovescore : " + n);
+}
+/* ==  checks for equality but does not cares about data type */
