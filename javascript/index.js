@@ -42,3 +42,27 @@ if(guestlist.includes(name))
 }else{
     console.log("you are not invited");
 }
+
+/* we use arr.push(n) :  To Add to the end of an Array*/
+
+//fizzBuzz program
+
+var n=1;
+var arr= [];
+function pushinarray(){
+    if(n%3==0 && n%5==0){
+        arr.push("fizzbuzz");
+    }else{
+        if(n%3==0){
+            arr.push("fizz");
+        }else{
+            if(n%5==0){
+                arr.push("Buzz");
+            }
+            else arr.push(n);
+        }
+    }
+    n++;
+    console.log(arr);
+}
+
