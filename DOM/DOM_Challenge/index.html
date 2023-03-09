@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+<!-- Different ways of selecting elements inside the DOM. -->
+<!-- getElementsByTagName :  it looks through the web page and it searches for the element with a particular tag name.
+                        gives us back the array of element that has tag
+
+                        document.getElementsByTagName("li")[2].style.color="red"; -->
+
+<!-- getElementsByClassName : it allows us to select elements based on the name of the class
+                         it also going to return  an array
+                         document.getElementsByClassName("btn");   -->
+
+<!-- getElementById : we only get back one item instead of an array, reason : a single web page, every single id should be unique
+                  document.getElementById("title").innerHTML="GOOD BYE"   -->
+
+<!-- querySelector : it is used  to select something. we could put in an element, a class, or an id,
+                document.querySelector(#list .items) heirarical  selector returns onlyfirst element of that querySelector
+                document.querySelectorAll(#list .items) return the array containing all the element  -->
+
+
+<!DOCTYPE html> 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -12,7 +30,7 @@
 
     <input type="checkbox">
 
-    <button style=":active color:red;">Click Me</button>
+    <button style="color:red;">Click Me</button>
 
     <ul>
       <li class="list">
@@ -25,3 +43,5 @@
   </body>
 
 </html>
+
+
