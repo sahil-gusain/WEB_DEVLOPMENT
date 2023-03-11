@@ -1,0 +1,22 @@
+h1{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.container{
+    text-align: center;
+    width:auto;
+}
+.dice{
+    text-align: center;
+    display: inline-block;
+}
+body{
+        background-color: #393E46;
+        color:aquamarine;
+        font-family: 'Lobster', cursive;;
+}
+h3{
+    size:5rem;
+    margin-bottom: 0px;
+}

@@ -1,5 +1,5 @@
 
-var n = MAth.random();
+var n = Math.random();
 /*
 A random no is genterated b/w 0-0.9999999999999999.
 It is pseudo random no generater 
