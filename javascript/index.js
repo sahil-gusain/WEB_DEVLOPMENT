@@ -65,4 +65,37 @@ function pushinarray(){
     n++;
     console.log(arr);
 }
+//calculator using internal function call
 
+function calculator(num1,num2,oper)
+{
+    return oper(num1,num2);
+}
+
+function sub(num1,num2)
+{
+    return num1-num2;
+}
+
+function add(num1,num2)
+{
+    return num1+num2;
+}
+
+function mult(num1,num2)
+{
+    return num1*num2;
+}
+
+function div(num1,num2)
+{
+    return num1/num2;
+}
+
+console.log(calculator(69,60,div));
+
+console.log(calculator(69,60,add));
+
+console.log(calculator(69,60,sub));
+
+console.log(calculator(69,60,mult));

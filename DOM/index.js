@@ -9,3 +9,4 @@ alert("hello");
 // The object that receives a notification (an object that implements the Event interface) when an event of the specified type occurs.
 
 // listner is a function call but we dont use () because it is actually called while executing
+
