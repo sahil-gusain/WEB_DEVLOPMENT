@@ -5,7 +5,8 @@ for(var i=0;i<btnarr.length;i++)
 {
     btnarr[i].addEventListener("click",function ()
     {
-        alert("sup bitches listen");
+        var audio = new Audio("sounds//crash.mp3");
+        audio.play();
     });
 }
 
