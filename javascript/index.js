@@ -137,3 +137,16 @@ var housekeeper2 = new  HouseKeeper("meena",30,11,["fatu","galaxy","stark"]);
 console.log(housekeeper1.name);
 console.log(housekeeper2.age);
 housekeeper1.clean();
+
+//A callback is a function passed as an argument to another function.This technique allows a function to call another function
+function myDisplayer(some) {
+    document.getElementById("demo").innerHTML = some;
+  }
+  
+  function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+  }
+  
+  myCalculator(5, 5, myDisplayer);
+
