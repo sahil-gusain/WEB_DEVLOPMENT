@@ -99,3 +99,41 @@ console.log(calculator(69,60,add));
 console.log(calculator(69,60,sub));
 
 console.log(calculator(69,60,mult));
+
+
+// Classes and objects in javascript
+
+//  A Class is the blueprint of an Object. It is a user defined data type that has
+//  member variable and member function .
+
+//  object is a instance of a class . when a class is created no memory is allocated
+//  but when a object is created memory is allocated
+
+
+// objectin js
+var housekeeper = {
+    name : "reena",
+    age : 34,
+    experience : 5,
+    previous_job : ["fatu","galaxy"],
+}
+console.log(housekeeper.name);
+
+
+function HouseKeeper(name,age,experience,previous_job){//constructor function
+    this.name=name;
+    this.age = age;
+    this.experience =experience;
+    this.previous_job = previous_job;
+    this.clean = function()
+    {
+        console.log("cleaning");
+    }
+}
+var housekeeper1 = new  HouseKeeper("reena",34,6,["fatu","galaxy"]);
+
+var housekeeper2 = new  HouseKeeper("meena",30,11,["fatu","galaxy","stark"]);
+
+console.log(housekeeper1.name);
+console.log(housekeeper2.age);
+housekeeper1.clean();
