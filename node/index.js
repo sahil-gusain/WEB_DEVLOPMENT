@@ -14,7 +14,15 @@
 
 // day things that you might want to do using Node.
 
+//native  node module
+// const fs = require("fs");
 
-const fs = require("fs");
+// fs.copyFileSync("text1.txt","file2.txt");
 
-fs.copyFileSync("text1.txt","file2.txt");
+//supervillan node module
+
+const Villan = require('supervillains');
+
+var villanName  = Villan.random();
+
+console.log(villanName);
