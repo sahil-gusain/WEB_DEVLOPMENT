@@ -138,7 +138,8 @@ console.log(housekeeper1.name);
 console.log(housekeeper2.age);
 housekeeper1.clean();
 
-//A callback is a function passed as an argument to another function.This technique allows a function to call another function
+//A callback is a function passed as an argument to another function.
+// This technique allows a function to call another function
 function myDisplayer(some) {
     document.getElementById("demo").innerHTML = some;
   }
