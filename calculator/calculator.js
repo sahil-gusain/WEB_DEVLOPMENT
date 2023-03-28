@@ -23,3 +23,13 @@ app.get("/",function(req,res){
     //send File as a respond
     //console.log(__dirname+"\\index.html");
 })
+
+app.get("/Bmicalculator",function(req,res){
+    res.sendFile(__dirname+"//BmiCalculator.html");
+})
+
+app.post("/BmiCalculator",function(req,res){
+    var n1 = parseFloat(req.body.height);//explicit conversion
+    var n2 = parseFloat(req.body.weight);
+    res.send("<h1> BMI CALCULATOR</h1> <h2> your BMI is </h2>"+(n2/(n1*n1)));
+})
