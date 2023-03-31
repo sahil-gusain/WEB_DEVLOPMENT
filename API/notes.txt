@@ -5,3 +5,7 @@ and objects that programmers can use to create software or interact with an exte
 
 APIs,including endpoints, paths,parameters, and authentication. 
 
+JSon: Javascript Object Notation. 
+JSON is used to pass data around on the Internet because it's in a format that can be readable by a human, but it can also be easily collapsed down
+to take up as little space as possible.
+
