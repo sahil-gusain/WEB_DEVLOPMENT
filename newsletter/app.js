@@ -52,6 +52,3 @@ app.post("/",function(req,res){
 
 app.listen(8000);
 
-//4dd08824379bc87bb813474357a0b50d-us21
-
-//4cea9c113f
