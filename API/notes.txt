@@ -12,3 +12,11 @@ to take up as little space as possible.
 Json.parse(data) : It is used  to turn any kind of string into a actual Javascript
 object and .stringify is used to convert Javascript object back into the string format
 
+//github
+
+git innit : used to intialize github file
+git add  : to ADD ANY changes in local git 
+git commit -m "op bolte biro" : to commit all the changes in the github
+git log : to check logs of that repository 
+git diff file_name : used to see the difference be commited file and currently saved file
+git checkout file_name: revert saved file to the commit file
