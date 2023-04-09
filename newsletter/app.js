@@ -2,7 +2,8 @@ const express = require("express");
 
 const bodyParser =require("body-parser");
 
-const request = require("request");
+// const request = require("request");
+const https = require("https");
 
 const app=express();
 
@@ -15,7 +16,42 @@ app.get("/",function(req,res){
 
 
 app.post("/",function(req,res){
-    res.send(req.body.first+" have been hacked");
+    const firstname = req.body.first;
+    const lastname =req.body.lname;
+    const email = req.body.email;
+
+    var data={
+      members : [
+        {
+            email_address : email,
+            status : "subscribed",
+            merge_field :{
+                FNAME : firstname,
+                LNAME : lastname
+            }
+        }
+      ]
+    }
+    var jsonData = JSON.stringify(data);
+
+    const url = "https://us21.api.mailchimp.com/3.0/lists/4cea9c113f";
+ 
+    const options = {
+      method : "POST",
+      auth :"sahil07:4dd08824379bc87bb813474357a0b50d-us21"
+    }
+
+    const request = https.request(url,options,function(response){
+      response.on("data",function(data){
+        console.log(JSON.parse(data));
+      })
+    })
+
+    
 })
 
 app.listen(8000);
+
+//4dd08824379bc87bb813474357a0b50d-us21
+
+//4cea9c113f
