@@ -20,3 +20,21 @@ git commit -m "op bolte biro" : to commit all the changes in the github
 git log : to check logs of that repository 
 git diff file_name : used to see the difference be commited file and currently saved file
 git checkout file_name: revert saved file to the commit file
+
+git rm --cached -r . : it is used to unadd files that are added to be commited
+
+
+.gitignore : this is the file that contains list off all the files which git ignores before commiting
+
+
+BRANCHING 
+
+git branch : it is used to check how many branches their are and allows user to check 
+             which branch he currently working on
+
+git branch branchname : creates a new branch 
+
+git checkout branchname: switches the current branch to branchname 
+
+git merge branchname : merges the branchname to main branch 
+:q! to end vim
