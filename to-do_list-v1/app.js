@@ -4,13 +4,30 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.get("/",function (req,res) {
-    const today = new Date("April 09, 2023 01:15:00");
-    var day = today.getDay()
-    if(day!=0 && day!=6){
-    res.send("<h1>boo! I have to work today ");
+    const today = new Date();
+    var day = today.getDay();
+    var currday = "";
+    // console.log(day);
+    switch(day){
+        case 0 : currday = "sunday";
+                    break;
+        case 1 : currday = "Monday";
+                 break;
+        case 2 : currday = "Tuesday";
+                break;
+        case 3 : currday = "Wedday";
+                break;
+        case 4 : currday = "Thursday";
+                break;
+        case 5 : currday = "Friday";
+                break;
+        case 6 : currday = "satday";
     }
-    else res.send("heee hayy")
+    // console.log(currday);
+    res.render("list",{kindofday : currday});
   })
 
 app.listen(8000,function(req,res){
