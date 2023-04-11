@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>day is <%= kindofday %></h1>
+    <% if(kindofday===0 || kindofday === 60){ %>
+        <h1><%= kindofday %> means nowork baby </h1>
+        <% } else{ %>
+    
+        <h1 style="color:red" ><%= kindofday %> yrr </h1>
+        <% } %>
 </body>
 </html>
