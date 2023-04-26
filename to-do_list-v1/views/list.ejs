@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css//styles.css">
 </head>
-<body>
-    <% if(kindofday===0 || kindofday === 60){ %>
-        <h1><%= kindofday %> means nowork baby </h1>
-        <% } else{ %>
-    
-        <h1 style="color:red" ><%= kindofday %> yrr </h1>
-        <% } %>
-</body>
+    <body>
+        <div class="box" id="heading">
+            <h1><%= kindofday %></h1>
+        </div>
+        
+        <div class="box">
+            <%for(var i=0;i<listarray.length; i++){ %>
+                <div class="item">
+                    <input type="checkbox" >
+                    <p><%=listarray[i]%></p>
+                </div>
+            <%   }  %>
+        
+            
+            <form class="item" action="/" method="post">
+                <input type="text" name="sample" placeholder="ADD NEW TASK" autocomplete="off">
+                <button type="submit">+</button>
+            </form>
+        </div>
+
+    </body>
 </html>

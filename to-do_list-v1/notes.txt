@@ -1,7 +1,13 @@
 EJS : embedded js templetes it is used to inject javascript code into the html 
-.ejs file is to be created in views folder  containing html code with ejs tags to
-inject js 
+
+.ejs file is to be created in views folder  containing html code with ejs tags to inject js 
+
 we also have to create a js object in app.render to send ejs code to ejs file
-their are various tags that allowed in ejs package like
+
+Their are various tags that allowed in ejs package like
 1.<%= this require js object
-2.<% this is used to add js in ejs html code
+2.<% %>this is used to add js in ejs html code
+
+
+toLocaleDateString is used to return date in a any format for various languages
+

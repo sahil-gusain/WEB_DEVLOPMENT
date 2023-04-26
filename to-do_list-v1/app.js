@@ -4,30 +4,31 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
+app.use(express.static("public"));
+
+var listitems = [];
+
+
+app.post("/",function(req,res){
+       listitems.push(req.body.sample);
+       res.redirect("/");
+})
+
 
 app.get("/",function (req,res) {
-    const today = new Date("2023-05-31");
-    var day = today.getDay();
-    var currday = "";
+    const today = new Date();
+    const options ={
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+    };
+    var currday = today.toLocaleDateString("en-US",options);
     // console.log(day);
-    switch(day){
-        case 0 : currday = "sunday";
-                    break;
-        case 1 : currday = "Monday";
-                 break;
-        case 2 : currday = "Tuesday";
-                break;
-        case 3 : currday = "Wednesday";
-                break;
-        case 4 : currday = "Thursday";
-                break;
-        case 5 : currday = "Friday";
-                break;
-        case 6 : currday = "satday";
-    }
+   
     // console.log(currday);
-    res.render("list",{kindofday : currday});
+    res.render("list",{kindofday : currday,listarray : listitems});
   })
 
 app.listen(8000,function(req,res){
