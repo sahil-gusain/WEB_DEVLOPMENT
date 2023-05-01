@@ -10,4 +10,8 @@ Their are various tags that allowed in ejs package like
 
 
 toLocaleDateString is used to return date in a any format for various languages
+we use options object to produce the dates
 
+we can also add templetes and layouts using ejs 
+
+<%-include("file name") -%> is used to achieve it

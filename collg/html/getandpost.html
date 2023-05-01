@@ -27,7 +27,7 @@
         <input type="submit" />
     </form> -->
 
-    <form>
+    <!-- <form>
         <label >Username:</label>
         <input type="text" id="username" name="username" required><br><br>
         
@@ -53,7 +53,45 @@
         </select><br><br>
         
         <input type="submit" value="Submit">
-      </form>
+      </form> -->
 
+      <form name="cform" >
+        <label for="name">Enter your name:  </label>
+        <input type="text" name="name">
+
+        <label for="fname">Enter your fathers name:  </label>
+        <input type="text" name="fname">
+
+        <label for="pno">Enter your phone number:  </label>
+        <input type="tel" name="pno">
+
+        <label for="email">Enter email:  </label>
+        <input type="email" name="email">
+
+        <label for="send"></label>
+        <input type="submit" name="send" onclick="validation()">
+    </form>
+
+      <script>
+        function validation(){
+            if(document.cform.name.value==""){
+                alert("enter valid name");
+            }
+            if(document.cform.fname.value==""){
+                alert("enter valid fathers name");
+            }
+            if(document.cform.pno.value==""){
+                alert("enter valid pno");
+            }
+            if(document.cform.pno.value<1 || document.cform.pno.value>9999999999){
+                alert("enter valid pno");
+            }
+            if(document.email.value="")
+            {
+                alert("enter valid email");
+            }
+        }
+      </script>
 </body>
+
 </html>
