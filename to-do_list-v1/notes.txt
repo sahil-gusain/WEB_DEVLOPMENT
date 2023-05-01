@@ -15,3 +15,12 @@ we use options object to produce the dates
 we can also add templetes and layouts using ejs 
 
 <%-include("file name") -%> is used to achieve it
+
+modules in javascript are smallest units of independent , reuseable code that
+can be used as building blocks for various projects
+
+importing a library: we use require function to import a particular library.we have 
+to set up the path for the library
+
+exporting a library : we use export keyword for making feature of one module available
+in the other file
