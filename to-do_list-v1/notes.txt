@@ -23,3 +23,19 @@ to set up the path for the library
 
 exporting a library : we use export keyword for making feature of one module available
 in the other file
+
+instead of using for loops we can use forEach function in javascript
+ for example:-
+   const numbers = [1,2,3,4];
+   numbers.forEach(myfunc);
+
+   function myfunc(nums){
+    console.log(nums);
+   }
+
+   numbers.forEach(function(nums){
+    console.log(nums);
+   });
+
+route parameter are the segment of url which are used to capture the specific value
+from the url captured value are stored in req.params object and can be accessed easily
