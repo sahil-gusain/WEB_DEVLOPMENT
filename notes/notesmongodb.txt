@@ -1,0 +1,12 @@
+mongodb commands
+
+1: show dbs:this command is used to see all the data bases
+2: use db_name:it is used to switch the current database into db_name
+3: db:returns the database in which we currently are
+4: db.collection_name.insertOne({})//create command:used to insert data into the new collection
+5: db.collection_name.find({query(opt)},{projection(opt)})//read command:used to read or query the database
+6: db.collection_name.updateOne({query},{$set : {new_data}}) // update command:
+    used to update new data according to a query
+7: db.collection_name.deleteOne({filters}) 
+
+

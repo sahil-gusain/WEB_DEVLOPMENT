@@ -1,0 +1,13 @@
+Databases are classified in two categories structured query language(sql) based
+and not only structured query language(nosql)
+
+MySql based is old and nosql based is new and shiny.More structured and requires 
+the scheme whereas nosql is more flexiable and document based
+
+SQL commands are based on crud technique:
+
+C : create : create table customer(id INT,name varchar(11),address varchar(20));
+r : read : select * from customer where id=1;
+u : Update : Update customer set name = 'sahil' where id=1;
+             alter table customer add email varchar(20);
+d : delete : delete customer where id = 1;
