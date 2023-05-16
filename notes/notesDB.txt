@@ -11,3 +11,6 @@ r : read : select * from customer where id=1;
 u : Update : Update customer set name = 'sahil' where id=1;
              alter table customer add email varchar(20);
 d : delete : delete customer where id = 1;
+
+
+mongoose : ODM
