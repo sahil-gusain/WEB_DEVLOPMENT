@@ -5,12 +5,12 @@
         </div>
         
         <div class="box">
-            <%for(var i=0;i<listarray.length; i++){ %>
+            <%listarray.forEach(function(items){%>
                 <div class="item">
                     <input type="checkbox" >
-                    <p><%=listarray[i]%></p>
+                    <p><%=items.name%></p>
                 </div>
-            <%   }  %>
+            <%   });  %>
         
             
             <form class="item" action="/" method="post">
