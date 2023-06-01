@@ -49,6 +49,12 @@ app.post("/",function(req,res){
 
 })
 
+app.post("/delete",function(req,res){
+
+  items.findByIdAndDelete(req.body.delete).then(function(){
+  });
+  res.redirect("/");
+})
 
 app.get("/",function (req,res) {
   items.find().then(function(item){
