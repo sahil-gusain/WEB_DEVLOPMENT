@@ -1,0 +1,1 @@
+<option> tag is used to define options for the select tag
